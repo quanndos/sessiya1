@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_blackout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="31dp"
+        >
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFF"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/username"
+                android:layout_margin="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:textColorHint="#AAA"
+                android:textSize="13dp"
+                android:textColor="#AAAAAA"
+                android:backgroundTint="#FFF"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFF"
+            android:layout_marginTop="20dp" >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/e_mail"
+                android:layout_margin="15dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+            <EditText
+                android:id="@+id/e_mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:hint="E-mail"
+                android:textColorHint="#AAA"
+                android:textColor="#AAAAAA"
+                android:backgroundTint="#FFF"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFF"
+            android:layout_marginTop="20dp" >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/password"
+                android:layout_margin="15dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:hint="Password"
+                android:textColorHint="#AAA"
+                android:textColor="#AAAAAA"
+                android:backgroundTint="#FFF"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFF"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/password"
+                android:layout_margin="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+            <EditText
+                android:id="@+id/retry_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:hint="Password"
+                android:textColorHint="#AAA"
+                android:textColor="#AAAAAA"
+                android:backgroundTint="#FFF"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sign up"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#4254BC"
+            android:textColor="#FFF"
+            />
+    </LinearLayout>
+</RelativeLayout>

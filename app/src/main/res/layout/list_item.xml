@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26dp">
+        <TextView
+            android:id="@+id/model_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kia Rio"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 min"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/sum_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15$"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="39dp"
+        />
+    <ImageView
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_line"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        />
+</RelativeLayout>
